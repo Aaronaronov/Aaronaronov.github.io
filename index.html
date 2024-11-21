@@ -5,11 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron's Website</title>
+    <style>
+        /* Style for the image container */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* Space between images */
+            align-items: center; /* Align images vertically in the center */
+            width: 100%; /* Ensure the container takes up full width */
+            margin-bottom: 20px; /* Optional: adds space below the image-container */
+        }
+
+        /* Spongebob stays to the left */
+        #spongebob {
+            margin-left: 0; /* Ensure no extra margin on the left */
+        }
+
+        /* Profile picture stays in the center */
+        #profilepic {
+            margin-left: 450px; /* Push the profile picture to the right */
+            margin-right: auto; /* Push it to the center */
+        }
+
+        /* Container for the video and text, using flexbox to arrange side by side */
+        .video-text-container {
+            display: flex;
+            align-items: center; /* Vertically center the items */
+            justify-content: 0px; /* Space between video and text */
+            margin-top: 20px;
+        }
+
+        /* Styling for the video */
+        .video-text-container video {
+            margin-right: 20px; /* Space between video and text */
+        }
+
+        /* Styling for the text container (heading and paragraph) */
+        .text-container {
+            display: flex;
+            flex-direction: column; /* Stack the heading and paragraph */
+            text-align: left; /* Align text to the left */
+        }
+
+        /* Adds space between the heading and the paragraph */
+        .text-container h2 {
+            margin-bottom: 10px; /* Space below the heading */
+        }
+
+        .text-container p {
+            font-size: 20px;
+        }
+
+    </style>
 </head>
 <body>
-   <img src="https://imgs.search.brave.com/G_xXhznKxNukMZvVkMELFR1mo_30rxCaoTeAenDyoOs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZ2FuZ3N0ZXIt/c3BvbmdlYm9iLWM2/YWVtNXp4dGR2MGF5/eGYuanBn" width="200" height="200">
-    <h2><a href="https://www.tiktok.com/en/">Visit tiktok</a></h2>
-    <marquee><h2>hi please follow my tiktok @Aaronaronov</h2></marquee>
-    <img src="https://imgs.search.brave.com/G-fCVfmRvM3tK3qV7u4HtuCGc04Yp4FiqTzNgU8V6zE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLmlt/Z2ZsaXAuY29tLzIv/NndvcTd5LmpwZw" alt="Aaron" width="200" height="200">
+   <!-- Image container to hold both images -->
+   <div class="image-container">
+       <!-- Spongebob Image stays left -->
+       <img src="https://imgs.search.brave.com/G_xXhznKxNukMZvVkMELFR1mo_30rxCaoTeAenDyoOs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvZ2FuZ3N0ZXIt/c3BvbmdlYm9iLWM2/YWVtNXp4dGR2MGF5/eGYuanBn" id="spongebob" width="200" height="200"/>
+       
+       <!-- Profile picture is centered -->
+       <img src="profilepic.JPG" id="profilepic" width="260" height="260"/>
+   </div>
+   
+   <h2><a href="https://www.tiktok.com/en/">Visit tiktok</a></h2>
+
+   <!-- Container for the video and the text -->
+   <div class="video-text-container">
+       <!-- Video element on the left -->
+       <video width="340" height="280" controls>
+           <source src="video.mov">
+           Your browser does not support the video tag.
+       </video>
+       
+       <!-- Text container for the heading and paragraph -->
+       <div class="text-container">
+           <h2>hi please follow my tiktok @Aaronaronov</h2>
+           <p>hear is a cool edit made on my tiktok if you want to see more like this pls go look at my tiktok</p>
+       </div>
+   </div>
+
 </body>
 </html>
